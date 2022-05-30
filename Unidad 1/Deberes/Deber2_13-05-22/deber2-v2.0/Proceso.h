@@ -19,6 +19,23 @@ class Proceso{
 		void mostrarAbs(tipod numero);
 };
 
+char ingresarDatos(char){
+	char *dato=new char[10];
+	char c;
+	int i=0;
+	printf("%s\n",msg);
+	fflush(stdin);
+	while((c=getch())!=13){
+		if((c>='0')&& (c<='9')||(c='')){
+			printf("%c",c);
+			dato[i++]=c;
+		}
+	}
+	dato[i]='\0';
+	fflush(stdin);
+	return dato;
+}
+
 	
 /*char *ingresarDatos(char *msg){
 	
