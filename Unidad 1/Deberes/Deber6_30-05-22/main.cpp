@@ -35,6 +35,10 @@ int main(int argc, char** argv) {
 				lst.MostrarFinal();			            
 				break;
 			}
+			case 6:{
+				lst.mcd();			            
+				break;
+			}
 			case 0:{
 				cout<<"\nAdios, gracias por usar el programa :D "<<endl;
 				break;

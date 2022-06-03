@@ -11,3 +11,5 @@ class Nodo{
 		}
 	friend class Lista;
 };
+
+

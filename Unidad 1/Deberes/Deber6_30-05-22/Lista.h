@@ -1,5 +1,6 @@
 #pragma once
 #include "Nodo.h"
+//#include "Nodo2.h"
 #include <iostream>
 #include <conio.h>
 #include <stdio.h>
@@ -31,6 +32,8 @@ class Lista{
 			}
 			this->actual = nuevo;
 		}
+		
+
 		
 		void MostrarInicio(){
 			if (!ListaVacia()){
@@ -112,14 +115,46 @@ class Lista{
 	            cout << n->Valor << "--->";
 				n = n->Siguiente;
 	        }
-
 	    }
+	    
+	    MCD(int a,int b){
+ 			if(a>=b && a%b==0){
+ 				return b;
+ 			}else{
+ 				return MCD(b,a%b);
+ 			}
+		}
+
+	    
+	    void mcd(){
+	    	if (!ListaVacia()){	
+	    		Nodo *tmp = this ->primero;
+	    		int aux;
+				while (tmp) 
+				{
+					
+					if( tmp->Siguiente != NULL){
+						aux=MCD(tmp->Valor,tmp->Siguiente->Valor);
+						Insertar(aux);		
+					}else{
+						aux=MCD(tmp->Valor,1);
+						Insertar(aux);
+					}
+					tmp = tmp->Siguiente;		
+				}
+				
+		    }else{
+		    	cout << "La lista esta vacia"<<endl;
+		}
+	    	
+		}
 	    
 	    
 	    
 	    
 	
 };
+
 
 
 int menu()
@@ -131,6 +166,7 @@ int menu()
 				<<"3. Eliminar un elemento en la lista"<<endl
 				<<"4. Imprimir la lista desde el inicio"<<endl
 				<<"5. Imprimir la lista desde el final"<<endl
+				<<"6. calcular el maximo comun divisor"<<endl
 				<<"0. Salir"<<endl
 				<<"\nEscoja una opcion: ";
 			cin>>opc;
