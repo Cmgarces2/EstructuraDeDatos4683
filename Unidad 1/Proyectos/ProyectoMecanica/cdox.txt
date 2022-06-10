@@ -1,0 +1,200 @@
+/***********************************************************************
+ * Module:  Cliente.cpp
+ * Author:  Luci
+ * Modified: viernes, 10 de junio de 2022 1:47:11
+ * Purpose: Implementation of the class Cliente
+ ***********************************************************************/
+
+#include "Cliente.h"
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::getNombre()
+// Purpose:    Implementation of Cliente::getNombre()
+// Return:     std::string
+////////////////////////////////////////////////////////////////////////
+
+std::string Cliente::getNombre(void)
+{
+   return Nombre;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::setNombre(std::string newNombre)
+// Purpose:    Implementation of Cliente::setNombre()
+// Parameters:
+// - newNombre
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Cliente::setNombre(std::string newNombre)
+{
+   Nombre = newNombre;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::getApellido()
+// Purpose:    Implementation of Cliente::getApellido()
+// Return:     std::string
+////////////////////////////////////////////////////////////////////////
+
+std::string Cliente::getApellido(void)
+{
+   return Apellido;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::setApellido(std::string newApellido)
+// Purpose:    Implementation of Cliente::setApellido()
+// Parameters:
+// - newApellido
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Cliente::setApellido(std::string newApellido)
+{
+   Apellido = newApellido;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::getCedula()
+// Purpose:    Implementation of Cliente::getCedula()
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+int Cliente::getCedula(void)
+{
+   return Cedula;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::setCedula(int newCedula)
+// Purpose:    Implementation of Cliente::setCedula()
+// Parameters:
+// - newCedula
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Cliente::setCedula(int newCedula)
+{
+   Cedula = newCedula;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::getTipo_de_auto()
+// Purpose:    Implementation of Cliente::getTipo_de_auto()
+// Return:     std::string
+////////////////////////////////////////////////////////////////////////
+
+std::string Cliente::getTipo_de_auto(void)
+{
+   return Tipo_de_auto;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::setTipo_de_auto(std::string newTipo_de_auto)
+// Purpose:    Implementation of Cliente::setTipo_de_auto()
+// Parameters:
+// - newTipo_de_auto
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Cliente::setTipo_de_auto(std::string newTipo_de_auto)
+{
+   Tipo_de_auto = newTipo_de_auto;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::getPlaca()
+// Purpose:    Implementation of Cliente::getPlaca()
+// Return:     std::string
+////////////////////////////////////////////////////////////////////////
+
+std::string Cliente::getPlaca(void)
+{
+   return placa;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::setPlaca(std::string newPlaca)
+// Purpose:    Implementation of Cliente::setPlaca()
+// Parameters:
+// - newPlaca
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Cliente::setPlaca(std::string newPlaca)
+{
+   placa = newPlaca;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::getColor()
+// Purpose:    Implementation of Cliente::getColor()
+// Return:     std::string
+////////////////////////////////////////////////////////////////////////
+
+std::string Cliente::getColor(void)
+{
+   return color;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::setColor(std::string newColor)
+// Purpose:    Implementation of Cliente::setColor()
+// Parameters:
+// - newColor
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Cliente::setColor(std::string newColor)
+{
+   color = newColor;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::getMarca()
+// Purpose:    Implementation of Cliente::getMarca()
+// Return:     std::string
+////////////////////////////////////////////////////////////////////////
+
+std::string Cliente::getMarca(void)
+{
+   return marca;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::setMarca(std::string newMarca)
+// Purpose:    Implementation of Cliente::setMarca()
+// Parameters:
+// - newMarca
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Cliente::setMarca(std::string newMarca)
+{
+   marca = newMarca;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::getId()
+// Purpose:    Implementation of Cliente::getId()
+// Return:     std::string
+////////////////////////////////////////////////////////////////////////
+
+std::string Cliente::getId(void)
+{
+   return id;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Cliente::setId(std::string newId)
+// Purpose:    Implementation of Cliente::setId()
+// Parameters:
+// - newId
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Cliente::setId(std::string newId)
+{
+   id = newId;
+}
