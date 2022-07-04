@@ -1,7 +1,7 @@
 #ifndef HASH_H
 #define HASH_H
 #include <iostream>
-#define tam  10 
+#define tam  5 
 //crecion de la clase 
 using namespace std;
 class Hash

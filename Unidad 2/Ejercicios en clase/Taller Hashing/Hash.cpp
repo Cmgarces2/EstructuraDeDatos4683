@@ -1,5 +1,5 @@
 #include "Hash.h"
-#define tam  5 
+//#define tam  5 
 #define buck  2
 
 void Hash::inicio() {

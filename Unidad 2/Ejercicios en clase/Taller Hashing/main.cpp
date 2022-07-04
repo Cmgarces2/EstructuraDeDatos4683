@@ -62,7 +62,7 @@ int main(int argc, char** argv) {
         		cout<<endl;
 				if (objt.eliminar(dim)) {
 					cout << "Despues de la eliminacion" << endl;
-					objt.impresion();
+					//objt.impresion();
 				}
 				else {
 					cout << "Valor no encontrado" << endl;
