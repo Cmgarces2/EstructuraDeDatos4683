@@ -107,28 +107,73 @@ int searchTST(Node* root, char* word)
 int main()
 {
     Node* root = NULL;
-    char cat[] = "cat";
-    char cats[] = "cats";
-    char up[] = "up";
-    char bug[] = "bug";
-    char bu[] = "bu";
-    insert(&root, cat);
-    insert(&root, cats);
-    insert(&root, up);
-    insert(&root, bug);
+    char palabra[20];
+	int opc;
  
-    cout << "Following is traversal of ternary search "
-            "tree\n";
-    traverseTST(root);
+   int opcion, tamanio = 0;
+     bool repetir = true;
+    do {
+        system("cls");
+        printf("\t\t===================================\n");
+        printf("\t\t\tMENU DE OPCIONES\n");
+        printf("\t\t===================================\n");
+        cout << "\t\t [1] Insertar" << endl;
+        cout << "\t\t [2] Mostrar" << endl;
+        cout << "\t\t [3] Buscar" << endl;
+        cout << "\t\t [0] SALIR" << endl;
+        printf("\t\t===================================\n");
+        cout << "\nIngrese una opcion: ";
+        cin >>  opc;
+        printf("\n\t\t===================================\n");
  
-    cout << "\nFollowing are search results for cats, bu "
-            "and cat respectively\n";
-    searchTST(root, cats) ? cout << "Found\n"
-                          : cout << "Not Found\n";
-    searchTST(root, bu) ? cout << "Found\n"
-                        : cout << "Not Found\n";
-    searchTST(root, cat) ? cout << "Found\n"
-                         : cout << "Not Found\n";
- 
+        switch (opcion) {
+   if (opcion > 4 || opcion < 0) {         
+          repetir = true;
+            }
+        case 1:
+            rewind(stdin);
+            do {
+                 cout << "ingrese una palabra para insertar";
+   				 insert(&root, palabra);;
+               
+            } while ("Desea agregar otro numero?");
+
+            system("pause>nul"); // Pausa
+            fflush(stdin);
+            break;
+            
+        case 2:
+            rewind(stdin);
+
+                   cout << "A continuación se muestra el recorrido de la búsqueda ternaria " "arbol\n";
+    				traverseTST(root);
+
+
+            system("pause>nul"); // Pausa
+            fflush(stdin);
+            break;
+
+        case 3:           
+
+	 
+    cout << "Los siguientes son resultados de busqueda \n" ;
+    searchTST(root, palabra) ? cout << "Found\n": cout << "Not Found\n";
+    //searchTST(root, bu) ? cout << "Found\n" : cout << "Not Found\n";
+    //searchTST(root, cat) ? cout << "Found\n" : cout << "Not Found\n";
+    
+            system("pause>nul"); // Pausa
+            fflush(stdin);
+            break;
+
+            
+        case 0:
+            repetir = false;
+            break;
+        }
+
+    } while (repetir);
+
     return 0;
 }
+ 
+
